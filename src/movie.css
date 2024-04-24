@@ -1,0 +1,11 @@
+.Movie{
+    margin: 15px;
+    background-color: rgb(182, 182, 182);
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+/* This changes the color down below and the font size is above */
+h4{
+    color: rgb(194, 128, 5);
+}
