@@ -3,20 +3,16 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Movie from "./movie.js";
 import './movie.css';
+import movieList from './movies.json';
 
 function App() {
-    const [movies, setMovies] = useState([]);
-
-    useEffect(() => {
-        fetch('/movies.json') 
-            .then(response => response.json())
-            .then(data => setMovies(data))
-            .catch(error => console.error('Error fetching movie data:', error));
-    }, []);
-
-    const handleDelete = (id) => {
-        setMovies(movies.filter(movie => movie.id !== id));
+    const [movies, setMovies] = useState(movieList);
+    const handleDelete = (title) => {
+        setMovies(movies.filter(movie => movie.title !== title));
     };
+    
+    
+    
 
     return (
         <div className="app">
