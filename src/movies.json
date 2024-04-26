@@ -1,27 +1,32 @@
 [
     {
+        "id": 1,
         "title": "The Batman",
         "director": "Matt Reeves",
         "stars": "Robert Pattinson, Zoe Kravitz"
     },
     {
-        "title": "Inception",
-        "director": "Christopher Nolan",
-        "stars": "Leonardo DiCaprio, Joseph Gordon-Levitt"
+        "id": 2,
+        "title": "How to Train your Dragon",
+        "director": "Dean Deblois and Chris Sanders",
+        "stars": "Jay Barrchi, George Thurman"
     },
     {
-        "title": "Avatar",
-        "director": "James Cameron",
-        "stars": "Sam Worthington, Zoe Saldana"
+        "id": 3,
+        "title": "Turning Red",
+        "director": "Domee Shi",
+        "stars": "Rossie Chiang, Sandra Oh"
     },
     {
-        "title": "Interstellar",
-        "director": "Christopher Nolan",
-        "stars": "Matthew McConaughey, Anne Hathaway"
+        "id": 4,
+        "title": "Pulp Fiction",
+        "director": "Quentin Tarantino",
+        "stars": "John Travolta, Uma thurman"
     },
     {
-        "title": "The Matrix",
-        "director": "Lana Wachowski, Lilly Wachowski",
-        "stars": "Keanu Reeves, Laurence Fishburne"
+        "id": 5,
+        "title": "Spider-Man: No Way Home",
+        "director": "John Watts",
+        "stars": "Tom holland, Zendaya"
     }
 ]

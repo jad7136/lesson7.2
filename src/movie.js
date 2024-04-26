@@ -3,7 +3,7 @@ import './movie.css';
 
 const Movie = ({ movie, onDelete }) => {
     const handleDeleteClick = () => {
-        onDelete(movie.title);
+        onDelete(movie.id);
     };
 
     return (
@@ -17,6 +17,5 @@ const Movie = ({ movie, onDelete }) => {
         </div>
     );
 };
-
 
 export default Movie;

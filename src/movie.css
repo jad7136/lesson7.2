@@ -1,6 +1,4 @@
 .Movie {
-    display: flex;
-    align-items: baseline; /* Align items at the baseline */
     margin: 15px;
     background-color: rgb(182, 182, 182);
     padding: 20px;
@@ -8,12 +6,6 @@
     border-radius: 5px;
 }
 
-.delete-btn {
-    margin-right: 10px;
-    margin-bottom: 5px; /* Adjust the margin bottom to move the button slightly up */
-}
-
-/* This changes the color down below and the font size is above */
 h4 {
     color: rgb(194, 128, 5);
 }
