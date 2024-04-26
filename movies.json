@@ -1,0 +1,27 @@
+[
+    {
+        "title": "The Batman",
+        "director": "Matt Reeves",
+        "stars": "Robert Pattinson, Zoe Kravitz"
+    },
+    {
+        "title": "Inception",
+        "director": "Christopher Nolan",
+        "stars": "Leonardo DiCaprio, Joseph Gordon-Levitt"
+    },
+    {
+        "title": "Avatar",
+        "director": "James Cameron",
+        "stars": "Sam Worthington, Zoe Saldana"
+    },
+    {
+        "title": "Interstellar",
+        "director": "Christopher Nolan",
+        "stars": "Matthew McConaughey, Anne Hathaway"
+    },
+    {
+        "title": "The Matrix",
+        "director": "Lana Wachowski, Lilly Wachowski",
+        "stars": "Keanu Reeves, Laurence Fishburne"
+    }
+]

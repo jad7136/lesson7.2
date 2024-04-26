@@ -1,25 +1,32 @@
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Movie from "./movie.js"
-import React from 'react';
+import Movie from "./movie.js";
 import './movie.css';
-//This uses 3 movies components in App
+
 function App() {
-  return (
-    <div className="App"> 
-      <h1>List of Movies</h1>
-      <div className= "movies row">
-        <div className='col-lg-4  col-md-6 col-sm-12'>
-        <Movie/>
+    const [movies, setMovies] = useState([]);
+
+    useEffect(() => {
+        fetch('/movies.json') 
+            .then(response => response.json())
+            .then(data => setMovies(data))
+            .catch(error => console.error('Error fetching movie data:', error));
+    }, []);
+
+    const handleDelete = (id) => {
+        setMovies(movies.filter(movie => movie.id !== id));
+    };
+
+    return (
+        <div className="app">
+            <div className="Movies row row-cols-sm-1 row-cols-lg-3">
+                {movies.map(movie => (
+                    <Movie key={movie.id} movie={movie} onDelete={() => handleDelete(movie.id)} />
+                ))}
+            </div>
         </div>
-        </div>
-        <div className='col-lg-4  col-md-6 col-sm-12'>
-        <Movie/>
-      </div>
-      <div className='col-lg-4  col-md-6 col-sm-12'>
-          <Movie/>
-        </div>
-      </div>
-  );
+    );
 }
+
 export default App;
